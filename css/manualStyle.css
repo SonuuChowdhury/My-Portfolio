@@ -339,3 +339,54 @@ html {
 .githubSkill {
   background-image: url("public/Skills/github.png");
 }
+
+
+/* Project Boxes */
+.projects{
+  height: auto;
+}
+
+.projectBoxes{
+  border: 2px solid black;
+  height: 15rem;
+  width: 30%;
+  
+
+}
+
+.nameOfProject{
+  margin-bottom: -3.5rem;
+} 
+.gitRepoAnchor{
+  margin-bottom: -3.9rem;
+  background-color: white;
+  color: black;
+  border-radius: 10em;
+  font-size: 1rem;
+  font-weight: 600;
+  padding:0 2em;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  border: 1px solid black;
+  box-shadow: 0 0 0 0 black;
+}
+
+.gitRepoAnchor:hover {
+  transform: translateY(-4px) translateX(-2px);
+  box-shadow: 2px 5px 0 0 black;
+};
+
+.gitRepoAnchor:active {
+  transform: translateY(2px) translateX(1px);
+  box-shadow: 0 0 0 0 black;
+};
+
+
+.projectBox1{
+  background-image: url("public/ProjectsLogo/tttgame.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+}
+
