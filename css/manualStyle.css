@@ -220,6 +220,7 @@ html {
   }
 }
 
+
 @media (max-width: 768px) {
   .aboutText {
     width: 85%;
@@ -228,7 +229,7 @@ html {
 }
 @media (max-width: 640px) {
   .aboutText {
-    font-size: 1rem ;
+    font-size: 1.2rem ;
     line-height: 1.5rem ;
   }
 }
