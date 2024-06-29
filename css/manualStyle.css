@@ -81,49 +81,6 @@ html {
   background-repeat: no-repeat;
 }
 
-/* Come Up animation  */
-.comeUpAnimation {
-  opacity: 0;
-  transform: translateY(100px);
-  animation: comeUp 1s ease-out forwards;
-}
-@keyframes comeUp {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-/* Come from left Animation*/
-.comeFromLeft {
-  animation: comeFromLeft 1s ease-out;
-}
-@keyframes comeFromLeft {
-  0% {
-    transform: translateX(-100%);
-    opacity: 0;
-  }
-  100% {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
-
-/* Come from Right Animation*/
-.comeFromRight {
-  animation: comeFromRight 1s ease-out;
-}
-@keyframes comeFromRight {
-  0% {
-    transform: translateX(100%);
-    opacity: 0;
-  }
-  100% {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
-
 /* Selection Disable */
 .usn {
   user-select: none;
