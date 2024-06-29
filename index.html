@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SonuuChowdhury- Portfolio</title>
+    <link rel="stylesheet" href="css/output.css">
+    <link rel="stylesheet" href="css/manualStyle.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body>
+    <nav>
+        <div class="text-black text-xl flex items-center h-20 justify-end">
+            <ul class="navLinks flex space-x-10 mr-8 comeFromLeft">
+                <a href="#home" class="navOptions">Home</a>
+                <a href="#about" class="navOptions">About</a>
+                <a href="#skills" class="navOptions">Skills</a>
+                <a href="#wrtiteups" class="navOptions">WriteUps</a>
+            </ul>
+            <button class="nav-hello-button font-extrabold comeFromLeft">Say Hello! 👋</button>
+        </div>
+        <div class="bg-black h-1 shadow-2xl"></div>
+    </nav>
+    <main>
+        <div id="home" class=" w-auto flex flex-col items-center">
+            <div class="mainPhoto mt-8 h-48 w-40 comeUpAnimation"></div>
+            <h1 class="usn comeUpAnimation text-4xl font-bold max-sm:text-2xl">
+                Sonu Chowdhury
+            </h1>
+            <div class="logoAfterName comeUpAnimation h-10 w-8 mt-3"></div>
+            <div class="comeUpAnimation mt-3 text-2xl text-center max-sm:text-base">
+                Full Stack Web Developer & Cyber Security Explorer
+            </div>
+            <ul class="flex flex-row space-x-9 mt-10 sm:mb-32 max-sm:mt-20">
+                <div class="github-Link links comeUpAnimation"></div>
+                <div class="insta-Link links comeUpAnimation"></div>
+                <div class="X-Link links comeUpAnimation"></div>
+                <div class="linkedin-Link links comeUpAnimation"></div>
+            </ul>
+        </div>
+
+        <div id="about" class="aboutSection font-sans text-white flex flex-col items-center">
+            <div class="font-bold  text-3xl mt-16 mb-16 max-sm:text-lg max-sm:mb-10" data-aos="fade-in">Hi, I'm Sonu. It's a pleasure to meet you!</div>
+            <div class="aboutSectionTextArea mb-11 flex flex-row justify-center  space-x-12  max-md:flex-wrap items-center">
+                <div class="aboutText aboutText1" data-aos="slide-up">Hello, I'm Sonu Chowdhury, residing in Kolkata, India. I completed my secondary education at Kendriya Vidyalaya No. 1 Kanchrapara, and I'm currently pursuing a B.Tech in Electrical and Electronics Engineering at the Academy of Technology in the Hooghly district. I'm passionate about exploring full-stack web development and seeking opportunities in this field.   
+                </div>
+                <div class="aboutText aboutText2 max-sm:pr-5" data-aos="slide-up">In addition, I have a keen interest in cyber security and consider myself a full tech geek. My hobbies include playing FPS games and pushing the boundaries in computer science. I am driven by my love for technology and look forward to making significant contributions in the tech world. I believe in continuous learning and staying updated with the latest advancements.
+                </div>
+            </div>
+        </div>
+
+
+        <div id="skills" class="skillsSection flex flex-col items-center w-full bg-black font-bold text-white">
+            <h1 class="text-6xl mt-28 mb-14" data-aos="fade-up ">Skills</h1>
+            <div class="showCaseSkill w-full flex space-x-3 justify-center flex-wrap max-sm:space-x-5">
+                <div class="showCaseSkillBlocks cSkill skillProps" data-aos="fade-up"><div class="skillNameMargin text-2xl max-sm:text-lg">C</div></div>
+                <div class="showCaseSkillBlocks cppSkill skillProps" data-aos="fade-up"><div class="skillNameMargin text-2xl max-sm:text-lg">C++</div></div>
+                <div class="showCaseSkillBlocks pythonSkill skillProps" data-aos="fade-up"><div class="skillNameMargin text-2xl max-sm:text-lg">python</div></div>
+                <div class="showCaseSkillBlocks htmlSkill skillProps" data-aos="fade-up"><div class="skillNameMargin text-2xl max-sm:text-lg">HTML</div></div>
+                <div class="showCaseSkillBlocks cssSkill skillProps" data-aos="fade-up"><div class="skillNameMargin text-2xl max-sm:text-lg">CSS</div></div>
+                <div class="showCaseSkillBlocks jsSkill skillProps" data-aos="fade-up"><div class="skillNameMargin text-2xl max-sm:text-sm">JavaScript</div></div>
+                <div class="showCaseSkillBlocks djangoSkill skillProps" data-aos="fade-up"><div class="skillNameMargin text-2xl max-sm:text-sm">django</div></div>
+                <div class="showCaseSkillBlocks mongoSkill skillProps" data-aos="fade-up"><div class="skillNameMargin text-2xl max-sm:text-xs">MongoDB</div></div>
+                <div class="showCaseSkillBlocks nodeSkill skillProps" data-aos="fade-up"><div class="skillNameMargin text-2xl max-sm:text-sm">NodeJs</div></div>
+                <div class="showCaseSkillBlocks reactSkill skillProps" data-aos="fade-up"><div class="skillNameMargin text-2xl max-sm:text-lg">React</div></div>
+                <div class="showCaseSkillBlocks twSkill skillProps" data-aos="fade-up"><div class="skillNameMargin text-2xl max-sm:text-xs">Tailwind</div></div>
+                <div class="showCaseSkillBlocks figmaSkill skillProps" data-aos="fade-up"><div class="skillNameMargin text-2xl max-sm:text-lg">Figma</div></div>
+                <div class="showCaseSkillBlocks gitSkill skillProps" data-aos="fade-up"><div class="skillNameMargin text-2xl max-sm:text-lg">Git</div></div>
+                <div class="showCaseSkillBlocks vscodeSkill skillProps" data-aos="fade-up"><div class="skillNameMargin text-2xl max-sm:text-sm text-center">VS Code</div></div>
+                <div class="showCaseSkillBlocks githubSkill skillProps" data-aos="fade-up"><div class="skillNameMargin text-2xl max-sm:text-lg">GitHub</div></div>
+
+            </div>
+        </div>
+        <div class="min-h-96">hello</div>
+    </main>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 180,
+        duration: 1000,
+      });
+    </script>
+</body>
+</html>

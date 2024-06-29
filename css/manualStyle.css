@@ -1,0 +1,385 @@
+html {
+  scroll-behavior: smooth;
+}
+
+/* Say Hello CSS */
+.nav-hello-button {
+  width: 10em;
+  position: relative;
+  height: 3.5em;
+  border: 3px ridge #149cea;
+  outline: none;
+  background-color: transparent;
+  color: black;
+  transition: 1s;
+  border-radius: 0.3em;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-right: 1rem;
+}
+
+@media (max-width: 578px) {
+  .nav-hello-button {
+    height: 2.2em;
+    width: 6.8em;
+
+    
+  } 
+}
+
+.nav-hello-button::after {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 3%;
+  width: 95%;
+  height: 40%;
+  background-color: white;
+  transition: 0.5s;
+  transform-origin: center;
+}
+
+.nav-hello-button::before {
+  content: "";
+  transform-origin: center;
+  position: absolute;
+  top: 80%;
+  left: 3%;
+  width: 95%;
+  height: 40%;
+  background-color: white;
+  transition: 0.5s;
+}
+
+.nav-hello-button:hover::before,
+.nav-hello-button:hover::after {
+  transform: scale(0);
+}
+
+.nav-hello-button:hover {
+  box-shadow: inset 0px 0px 25px #1479ea;
+}
+
+@media (max-width: 578px) {
+  .navLinks {
+    display: none;
+  } 
+}
+
+/* main Photo CSS */
+.mainPhoto {
+  background-image: url("public/Home Page/mainPhoto.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* logoAfterName */
+.logoAfterName {
+  background-image: url("public/Home Page/logoAfterName.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Come Up animation  */
+.comeUpAnimation {
+  opacity: 0;
+  transform: translateY(100px);
+  animation: comeUp 1s ease-out forwards;
+}
+@keyframes comeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Come from left Animation*/
+.comeFromLeft {
+  animation: comeFromLeft 1s ease-out;
+}
+@keyframes comeFromLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Come from Right Animation*/
+.comeFromRight {
+  animation: comeFromRight 1s ease-out;
+}
+@keyframes comeFromRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Selection Disable */
+.usn {
+  user-select: none;
+}
+
+/* Social Media Links */
+.github-Link {
+  background-image: url("public/Home Page/github.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.X-Link {
+  background-image: url("public/Home Page/X.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.linkedin-Link {
+  background-image: url("public/Home Page/linkedin.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.insta-Link {
+  background-image: url("public/Home Page/instagram.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.links {
+  height: 3rem;
+  width: 3rem;
+}
+@media (max-width: 640px) {
+  .links {
+    height: 1.5rem;
+    width: 1.5rem;
+    margin-bottom: 3rem;
+  }
+}
+.links:hover {
+  cursor: pointer;
+}
+
+/* Nav option hover design */
+.navOptions:hover {
+  color: red;
+}
+
+/* About Section CSS */
+.aboutSection {
+  background-color: rgb(44, 44, 44);
+  height: auto;
+}
+
+.aboutSectionTextArea {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .aboutSectionTextArea {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 0.675rem /* 14px */;
+    line-height: 1.5rem /* 20px */
+  }
+}
+
+.aboutText1 {
+  width: 45%;
+  height: auto;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: x-large;
+}
+
+.aboutText2 {
+  width: 45%;
+  height: auto;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: x-large;
+}
+
+@media (max-width: 768px) {
+  .aboutText2 {
+    text-align: right;
+    margin-top: 2.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .aboutText {
+    width: 85%;
+    height: auto; 
+  }
+}
+
+
+/* skill section */
+.skillsSection {
+  width: 100%;
+  height: auto;
+  background: radial-gradient(
+        circle farthest-side at 0% 50%,
+        #282828 23.5%,
+        rgba(255, 170, 0, 0) 0
+      )
+      21px 30px,
+    radial-gradient(
+        circle farthest-side at 0% 50%,
+        #a1000e 24%,
+        rgba(240, 166, 17, 0) 0
+      )
+      19px 30px,
+    linear-gradient(
+        #282828 14%,
+        rgba(240, 166, 17, 0) 0,
+        rgba(240, 166, 17, 0) 85%,
+        #282828 0
+      )
+      0 0,
+    linear-gradient(
+        150deg,
+        #282828 24%,
+        #a1000e 0,
+        #a1000e 26%,
+        rgba(240, 166, 17, 0) 0,
+        rgba(240, 166, 17, 0) 74%,
+        #a1000e 0,
+        #a1000e 76%,
+        #282828 0
+      )
+      0 0,
+    linear-gradient(
+        30deg,
+        #282828 24%,
+        #a1000e 0,
+        #a1000e 26%,
+        rgba(240, 166, 17, 0) 0,
+        rgba(240, 166, 17, 0) 74%,
+        #a1000e 0,
+        #a1000e 76%,
+        #282828 0
+      )
+      0 0,
+    linear-gradient(90deg, #a1000e 2%, #282828 0, #282828 98%, #a1000e 0%) 0 0
+      #282828;
+  background-size: 40px 60px;
+}
+
+.showCaseSkill {
+  width: 60%;
+  height: 70rem;
+}
+@media (max-width: 768px) {
+  .showCaseSkill  {
+    width: 60%;
+    height: 44rem; 
+  }
+}
+
+.showCaseSkillBlocks {
+  height: 8rem;
+  width: 30%;
+}
+
+@media (max-width: 640px) {
+  .showCaseSkillBlocks {
+    height: 4rem;
+    width: 27%;
+  }
+}
+
+.skillNameMargin {
+  margin-bottom: -2.4rem;
+}
+
+.skillProps {
+  background-size: contain;
+  background-position: top;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  margin-bottom: 2.5rem;
+}
+
+.cSkill {
+  background-image: url("public/Skills/c.png");
+}
+
+.cppSkill {
+  background-image: url("public/Skills/cpp.png");
+}
+
+.pythonSkill {
+  background-image: url("public/Skills/python.png");
+}
+
+.htmlSkill {
+  background-image: url("public/Skills/html.png");
+}
+
+.cssSkill {
+  background-image: url("public/Skills/css.png");
+}
+
+.jsSkill {
+  background-image: url("public/Skills/js.png");
+}
+
+.djangoSkill {
+  background-image: url("public/Skills/django.png");
+}
+
+.mongoSkill {
+  background-image: url("public/Skills/MongoDB.png");
+}
+
+.nodeSkill {
+  background-image: url("public/Skills/node.png");
+}
+
+.reactSkill {
+  background-image: url("public/Skills/react.png");
+}
+
+.twSkill {
+  background-image: url("public/Skills/tailwind.png");
+}
+
+.figmaSkill {
+  background-image: url("public/Skills/figma.png");
+}
+
+.gitSkill {
+  background-image: url("public/Skills/git.png");
+}
+
+.vscodeSkill {
+  background-image: url("public/Skills/vscode.png");
+}
+
+.githubSkill {
+  background-image: url("public/Skills/github.png");
+}
+
+
+
+
