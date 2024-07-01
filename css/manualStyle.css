@@ -1,5 +1,5 @@
 html {
-  scroll-behavior:smooth;
+  scroll-behavior: smooth;
 }
 
 /* Say Hello CSS */
@@ -60,7 +60,7 @@ html {
   .navLinks {
     display: none;
   }
-  .nav-hello-button{
+  .nav-hello-button {
     width: 33%;
     height: 60%;
   }
@@ -163,8 +163,8 @@ html {
 }
 @media (max-width: 640px) {
   .aboutText {
-    font-size: 0.7rem ;
-    line-height: 1rem ;
+    font-size: 0.7rem;
+    line-height: 1rem;
   }
 }
 
@@ -297,12 +297,11 @@ html {
   background-image: url("public/Skills/github.png");
 }
 
-
 /* Project Boxes */
-.projects{
+.projects {
   height: auto;
 }
-.projectBoxes{
+.projectBoxes {
   margin-bottom: 6rem;
   height: 16rem;
   width: 20%;
@@ -311,14 +310,14 @@ html {
   justify-content: end;
   align-items: center;
 }
-.gitRepoAnchor{
+.gitRepoAnchor {
   margin-top: 2rem;
   background-color: white;
   color: black;
   border-radius: 10em;
   font-size: 1rem;
   font-weight: 600;
-  padding:0 2em;
+  padding: 0 2em;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
   border: 1px solid black;
@@ -335,52 +334,52 @@ html {
   transform: translateY(2px) translateX(1px);
   box-shadow: 0 0 0 0 black;
 }
-.projectBox1{
+.projectBox1 {
   background-image: url("public/ProjectsLogo/tttgame.png");
   background-size: contain;
-  background-position: center; 
+  background-position: center;
   background-repeat: no-repeat;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
 }
-.projectBox2{
+.projectBox2 {
   background-image: url("public/ProjectsLogo/amazon.png");
   background-size: contain;
-  background-position: center; 
+  background-position: center;
   background-repeat: no-repeat;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
 }
-.projectBox3{
+.projectBox3 {
   background-image: url("public/ProjectsLogo/calculator.png");
   background-size: contain;
-  background-position: center; 
+  background-position: center;
   background-repeat: no-repeat;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
 }
-.projectBox1:hover{
+.projectBox1:hover {
   transform: translateY(-4px) translateX(-2px);
 }
-.projectBox2:hover{
+.projectBox2:hover {
   transform: translateY(-4px) translateX(-2px);
 }
-.projectBox3:hover{
+.projectBox3:hover {
   transform: translateY(-4px) translateX(-2px);
 }
 @media (max-width: 768px) {
-  .projectBoxeArea{
+  .projectBoxeArea {
     flex-direction: column;
     align-items: center;
   }
-  .projectBoxes{
+  .projectBoxes {
     margin-bottom: 4.5rem;
     width: 50%;
   }
 }
 
 /* say Hi section  */
- .sayHi {
+.sayHi {
   background-color: #333;
   height: auto;
   display: flex;
@@ -388,7 +387,7 @@ html {
   align-items: center;
   margin: 0;
   font-family: Arial, sans-serif;
-} 
+}
 .form-container {
   background-color: #444;
   padding: 20px;
@@ -398,7 +397,7 @@ html {
   margin-bottom: 5rem;
 }
 @media (max-width: 768px) {
-  .form-container{
+  .form-container {
     width: 60%;
   }
 }
@@ -410,7 +409,11 @@ label {
   color: #fff;
   margin-bottom: 5px;
 }
-.firstNameInput,.lastNameInput,.emailInput,.messgaeInput,.submitFormButton {
+.firstNameInput,
+.lastNameInput,
+.emailInput,
+.messgaeInput,
+.submitFormButton {
   width: 100%;
   padding: 10px;
   border: 1px solid #ccc;
@@ -426,47 +429,73 @@ label {
 .submitFormButton:hover {
   background-color: #777;
 }
-.messgaeInput{
+.messgaeInput {
   height: 10rem;
 }
 
 /* footer section  */
 
-.contactMe{
+.contactMe {
   background-color: #8338ec;
   height: auto;
 }
 
-.contactMeBoxes{
+.contactMeBoxes {
   margin-top: 3rem;
   width: 30%;
   height: auto;
-  margin-bottom: 4rem ;
+  margin-bottom: 4rem;
 }
-
-.contactMeLeft{
+.contactMeLeft {
   margin-right: 2.4rem;
 }
 
-.contactMeRight{
+.contactMeRight {
   margin-left: 2.4rem;
 }
 
-.footerLast{
-  background-color: #023e8a;
-  height: auto;
-}
-.footerLastContent{
-  width: 60%;
-  
-}
-@media (max-width: 768px) {
-  .footerLastContent{
-    width: 70%;
+@media (max-width: 640px) {
+  .contactMe {
+    font-size: 0.65rem;
+    line-height: 0.9rem;
+  }
+  .contactMeBoxes {
+    width: 40%;
+    height: auto;
+    margin-bottom: 4rem;
+  }
+  .contactMeLeft {
+    margin-right: 1rem;
+  }
+
+  .contactMeRight {
+    margin-left: 1rem;
+  }
+  .contanctMeBoxMailAreaContent {
+    font-size: 0.5rem;
+    line-height: 0.7rem;
   }
 }
 
-
-
-
-
+.footerLast {
+  background-color: #023e8a;
+  height: auto;
+}
+.footerLastContent {
+  width: 60%;
+}
+@media (max-width: 768px) {
+  .footerLastContent {
+    width: 70%;
+  }
+}
+@media (max-width: 640px) {
+  .footerLastContent {
+    width: 70%;
+    font-size: 0.4rem;
+    line-height: 0.7rem;
+  }
+  .contactMeBoxes {
+    margin-bottom: 1rem;
+  }
+}
