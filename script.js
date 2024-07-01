@@ -9,6 +9,11 @@ const DgitTTT = document.querySelector(".DgitTTT");
 const DgitAmazon = document.querySelector(".DgitAmazon");
 const DgitDC = document.querySelector(".DgitDC");
 
+// const sayHi=document.querySelector(".sayHi");
+
+// githubLink.addEventListener("click",() => { 
+//     window.location.href="/#sayHi"
+//  });
 
 githubLink.addEventListener("click",() => { 
     window.open("https://github.com/SonuuChowdhury/")

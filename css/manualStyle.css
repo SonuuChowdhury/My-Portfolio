@@ -1,10 +1,12 @@
 html {
-  scroll-behavior: smooth;
+  scroll-behavior:smooth;
 }
 
 /* Say Hello CSS */
 .nav-hello-button {
+  padding-top: 0.5em;
   width: 10em;
+  height: 3.5em;
   position: relative;
   height: 3.5em;
   border: 3px ridge #149cea;
@@ -19,10 +21,8 @@ html {
   margin-right: 1rem;
 }
 
-
 .nav-hello-button::after {
   content: "";
-
   position: absolute;
   top: -10px;
   left: 3%;
@@ -53,10 +53,16 @@ html {
 .nav-hello-button:hover {
   box-shadow: inset 0px 0px 25px #1479ea;
 }
-
+.navOptions:hover {
+  color: red;
+}
 @media (max-width: 578px) {
   .navLinks {
     display: none;
+  }
+  .nav-hello-button{
+    width: 33%;
+    height: 60%;
   }
 }
 
@@ -84,49 +90,33 @@ html {
 /* Social Media Links */
 .github-Link {
   background-image: url("public/Home Page/github.png");
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 
 .X-Link {
   background-image: url("public/Home Page/X.png");
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 
 .linkedin-Link {
   background-image: url("public/Home Page/linkedin.png");
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 
 .insta-Link {
   background-image: url("public/Home Page/instagram.png");
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
 }
-
 .links {
   height: 3rem;
   width: 3rem;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
 }
+
 @media (max-width: 640px) {
   .links {
     height: 2rem;
     width: 2rem;
   }
-}
-.links:hover {
-  cursor: pointer;
-}
-
-/* Nav option hover design */
-.navOptions:hover {
-  color: red;
 }
 
 /* About Section CSS */
@@ -134,11 +124,9 @@ html {
   background-color: rgb(44, 44, 44);
   height: auto;
 }
-
 .aboutSectionTextArea {
   width: 100%;
 }
-
 @media (max-width: 768px) {
   .aboutSectionTextArea {
     display: flex;
@@ -150,14 +138,12 @@ html {
     line-height: 1.5rem; /* 20px */
   }
 }
-
 .aboutText1 {
   width: 45%;
   height: auto;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: x-large;
 }
-
 .aboutText2 {
   width: 45%;
   height: auto;
@@ -170,10 +156,6 @@ html {
     text-align: right;
     margin-top: 2.5rem;
   }
-}
-
-
-@media (max-width: 768px) {
   .aboutText {
     width: 85%;
     height: auto;
@@ -237,7 +219,6 @@ html {
       #282828;
   background-size: 40px 60px;
 }
-
 .showCaseSkill {
   width: 60%;
   height: 70rem;
@@ -248,23 +229,19 @@ html {
     height: 44rem;
   }
 }
-
 .showCaseSkillBlocks {
   height: 8rem;
   width: 30%;
 }
-
 @media (max-width: 640px) {
   .showCaseSkillBlocks {
     height: 4rem;
     width: 27%;
   }
 }
-
 .skillNameMargin {
   margin-bottom: -2.4rem;
 }
-
 .skillProps {
   background-size: contain;
   background-position: top;
@@ -274,63 +251,48 @@ html {
   align-items: end;
   margin-bottom: 2.5rem;
 }
-
 .cSkill {
   background-image: url("public/Skills/c.png");
 }
-
 .cppSkill {
   background-image: url("public/Skills/cpp.png");
 }
-
 .pythonSkill {
   background-image: url("public/Skills/python.png");
 }
-
 .htmlSkill {
   background-image: url("public/Skills/html.png");
 }
-
 .cssSkill {
   background-image: url("public/Skills/css.png");
 }
-
 .jsSkill {
   background-image: url("public/Skills/js.png");
 }
-
 .djangoSkill {
   background-image: url("public/Skills/django.png");
 }
-
 .mongoSkill {
   background-image: url("public/Skills/MongoDB.png");
 }
-
 .nodeSkill {
   background-image: url("public/Skills/node.png");
 }
-
 .reactSkill {
   background-image: url("public/Skills/react.png");
 }
-
 .twSkill {
   background-image: url("public/Skills/tailwind.png");
 }
-
 .figmaSkill {
   background-image: url("public/Skills/figma.png");
 }
-
 .gitSkill {
   background-image: url("public/Skills/git.png");
 }
-
 .vscodeSkill {
   background-image: url("public/Skills/vscode.png");
 }
-
 .githubSkill {
   background-image: url("public/Skills/github.png");
 }
@@ -340,7 +302,6 @@ html {
 .projects{
   height: auto;
 }
-
 .projectBoxes{
   margin-bottom: 6rem;
   height: 16rem;
@@ -349,9 +310,7 @@ html {
   flex-direction: column;
   justify-content: end;
   align-items: center;
-
 }
-
 .gitRepoAnchor{
   margin-top: 2rem;
   background-color: white;
@@ -368,17 +327,14 @@ html {
   background-position: center;
   background-repeat: no-repeat;
 }
-
 .gitRepoAnchor:hover {
   transform: translateY(-4px) translateX(-2px);
   box-shadow: 2px 5px 0 0 black;
 }
-
 .gitRepoAnchor:active {
   transform: translateY(2px) translateX(1px);
   box-shadow: 0 0 0 0 black;
 }
-
 .projectBox1{
   background-image: url("public/ProjectsLogo/tttgame.png");
   background-size: contain;
@@ -387,7 +343,6 @@ html {
   cursor: pointer;
   transition: all 0.3s ease-in-out;
 }
-
 .projectBox2{
   background-image: url("public/ProjectsLogo/amazon.png");
   background-size: contain;
@@ -396,7 +351,6 @@ html {
   cursor: pointer;
   transition: all 0.3s ease-in-out;
 }
-
 .projectBox3{
   background-image: url("public/ProjectsLogo/calculator.png");
   background-size: contain;
@@ -405,7 +359,6 @@ html {
   cursor: pointer;
   transition: all 0.3s ease-in-out;
 }
-
 .projectBox1:hover{
   transform: translateY(-4px) translateX(-2px);
 }
@@ -415,21 +368,16 @@ html {
 .projectBox3:hover{
   transform: translateY(-4px) translateX(-2px);
 }
-
 @media (max-width: 768px) {
   .projectBoxeArea{
     flex-direction: column;
     align-items: center;
   }
-}
-
-@media (max-width: 768px) {
   .projectBoxes{
     margin-bottom: 4.5rem;
     width: 50%;
   }
 }
-
 
 /* say Hi section  */
  .sayHi {
@@ -441,7 +389,6 @@ html {
   margin: 0;
   font-family: Arial, sans-serif;
 } 
-
 .form-container {
   background-color: #444;
   padding: 20px;
@@ -450,24 +397,20 @@ html {
   width: 75%;
   margin-bottom: 5rem;
 }
-
 @media (max-width: 768px) {
   .form-container{
     width: 60%;
   }
 }
-
 .form-group {
   margin-bottom: 15px;
 }
-
 label {
   display: block;
   color: #fff;
   margin-bottom: 5px;
 }
-
-input, textarea, button {
+.firstNameInput,.lastNameInput,.emailInput,.messgaeInput,.submitFormButton {
   width: 100%;
   padding: 10px;
   border: 1px solid #ccc;
@@ -476,17 +419,54 @@ input, textarea, button {
   color: #fff;
   outline: none;
 }
-
-button {
+.submitFormButton {
   background-color: #888;
   cursor: pointer;
 }
-
-button:hover {
+.submitFormButton:hover {
   background-color: #777;
 }
-
-#message{
+.messgaeInput{
   height: 10rem;
 }
+
+/* footer section  */
+
+.contactMe{
+  background-color: #8338ec;
+  height: auto;
+}
+
+.contactMeBoxes{
+  margin-top: 3rem;
+  width: 30%;
+  height: auto;
+  margin-bottom: 4rem ;
+}
+
+.contactMeLeft{
+  margin-right: 2.4rem;
+}
+
+.contactMeRight{
+  margin-left: 2.4rem;
+}
+
+.footerLast{
+  background-color: #023e8a;
+  height: auto;
+}
+.footerLastContent{
+  width: 60%;
+  
+}
+@media (max-width: 768px) {
+  .footerLastContent{
+    width: 70%;
+  }
+}
+
+
+
+
 
